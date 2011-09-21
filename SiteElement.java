@@ -1,22 +1,23 @@
 public class SiteElement {
-  
-  public static void getBench() {
-    System.out.println("called getBench");
-  }
 
-  public static void getTree() {
-    System.out.println("called getTree");
-  }
-
-  public static void getRoad() {
-    System.out.println("called getRoad");
-  }
-
-  public static void getHouse() {
-    System.out.println("called getHouse");
-  }
-
-  public static void getBuilding() {
-    System.out.println("called getBuilding");
+  public static void createObject(String type,int loc_x,int loc_y,String color) {
+    if(type.equalsIgnoreCase("tree")) {
+      ElementTree.cloneMe();
+    }
+    else if(type.equalsIgnoreCase("bench")) {
+      ElementBench.cloneMe();
+    }
+    else if(type.equalsIgnoreCase("road")) {
+      ElementRoad.cloneMe();
+    }
+    else if(type.equalsIgnoreCase("house")) {
+      ElementHouse.cloneMe();
+    }
+    else if(type.equalsIgnoreCase("building")) {
+      ElementBuilding.cloneMe();
+    }
+    else {
+      System.out.println("Invalid object specified");
+    }
   }
 };

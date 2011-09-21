@@ -89,23 +89,23 @@ public class SiteDeveloper {
                         if(sc.hasNext()) {
                           color = sc.next();
                           /**
-                            * now that we have a valid command, with all require parameters, lets create it
+                            * now that we have a valid command, with all required parameters, lets create it
                            */
 
                           if(create.equalsIgnoreCase("tree")) {
-                            SiteElement.getTree();
+                            SiteElement.createObject(create,loc_x,loc_y,color);
                           }
                           else if(create.equalsIgnoreCase("building")) {
-                            SiteElement.getBuilding();
+                            //SiteElement.getBuilding();
                           }
                           else if(create.equalsIgnoreCase("bench")) {
-                            SiteElement.getBench();
+                            //SiteElement.getBench();
                           }
                           else if(create.equalsIgnoreCase("house")) {
-                            SiteElement.getHouse();
+                            //SiteElement.getHouse();
                           }
                           else if(create.equalsIgnoreCase("road")) {
-                            SiteElement.getRoad();
+                            //SiteElement.getRoad();
                           }
                           else {
                             System.out.println("Error, invalid object specified");
