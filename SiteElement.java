@@ -1,4 +1,5 @@
 public class SiteElement {
+  
   public static void getBench() {
     System.out.println("called getBench");
   }

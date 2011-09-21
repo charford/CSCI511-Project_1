@@ -1,32 +1,124 @@
 import java.util.Scanner;
 
 public class SiteDeveloper {
-
+  /**
+   *  Main method
+   *  Purpose: Reads user input, returns error if invalid format given
+   *  If valid command, makes call to SiteElement method for corresponding 
+   *  object that it needs to create.
+  */
   public static void main( String [] args ) {
+
+    /**
+     *  Print title and welcome message
+    */
     System.out.println("-------------------------------------");
     System.out.println("Site Developer Application - Welcome!");
     System.out.println("-------------------------------------");
+
+    /**
+     *  Instantiate a Scanner object, we'll use this to read input
+    */
     Scanner sc = new Scanner(System.in);
+
+    /**
+     *  call to displayMenu, then enter into while loop to accept
+     *  user input. Infinte loop, till the user types 'q'
+    */
     displayMenu();
-    String user_input, create, location;
-    int loc_x, loc_y;
+
+    /**
+     *  define the global variables, which will be used to store user input 
+    */
+    String user_input,create,location,color;
+    int loc_x,loc_y;
+
+
+    /**
+     *  input loop
+    */
     while(sc.hasNext()) {
 
+      /**
+       *  retrieve input, store it in user_input
+      */
       user_input = sc.next();
-      System.out.println("Your command: " + user_input);
+      /** System.out.println("Your command: " + user_input);*/
 
+      /**
+       *  Check if user_input is valid
+      */
       if(user_input.equalsIgnoreCase("create")) {
-         System.out.println("Create command");
+          
+         /**
+          *  create command
+         */
+         /** System.out.println("Create command"); */
          if(sc.hasNext()) {
+
+           /**
+            *  what are we creating?
+           */
            create = sc.next();
-           System.out.println("Create " + create);
+           /**System.out.println("Create " + create);*/
            if(sc.hasNext()) {
+
+             /**
+              *  where will it be located?
+             */
              location = sc.next();
+
              if(location.equalsIgnoreCase("loc")) {
                if(sc.hasNextInt()) {
+                 /**
+                  *  get x axis
+                 */
                  loc_x = sc.nextInt();
                  if(sc.hasNextInt()) {
+                  /**
+                    *  get y axis
+                   */
                    loc_y = sc.nextInt();
+
+                   if(sc.hasNext()) {
+                     /**
+                       *  time to find out what color to make it
+                      */
+                      color = sc.next();
+                      if(color.equalsIgnoreCase("color")) {
+                        if(sc.hasNext()) {
+                          color = sc.next();
+                          /**
+                            * now that we have a valid command, with all require parameters, lets create it
+                           */
+
+                          if(create.equalsIgnoreCase("tree")) {
+                            SiteElement.getTree();
+                          }
+                          else if(create.equalsIgnoreCase("building")) {
+                            SiteElement.getBuilding();
+                          }
+                          else if(create.equalsIgnoreCase("bench")) {
+                            SiteElement.getBench();
+                          }
+                          else if(create.equalsIgnoreCase("house")) {
+                            SiteElement.getHouse();
+                          }
+                          else if(create.equalsIgnoreCase("road")) {
+                            SiteElement.getRoad();
+                          }
+                          else {
+                            System.out.println("Error, invalid object specified");
+                          }
+            
+
+                        }
+                        
+                      }
+                      else {
+                        System.out.println("Error, invalid command(expecting color)");
+                      }
+                   }
                  }
                  else {
                    System.out.println("Error, invalid location (Y) given");
@@ -47,14 +139,9 @@ public class SiteDeveloper {
          }
       }
 
-      if(user_input.equalsIgnoreCase("loc")) {
-         System.out.println("Loc command");
-      }
-
-      if(user_input.equalsIgnoreCase("color")) {
-         System.out.println("Color command");
-      }
-
+      /**
+        * quit program
+       */
       if(user_input.equalsIgnoreCase("q")) {
         System.out.println("Quiting SiteDeveloper. Have a nice day!");
         break;
