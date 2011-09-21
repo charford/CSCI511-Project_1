@@ -1,0 +1,5 @@
+create tree loc 3 4 color green
+create sidewalk loc 4 3 color blue
+create bench loc 3 4 color red
+create bench loc 3 3 djfl
+q
