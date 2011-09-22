@@ -1,5 +1,5 @@
 public class SiteElement {
-  int buildSpace[][];
+  static int buildSpace[][];
   int size_x = 50;
   int size_y = 50;
   
@@ -12,22 +12,28 @@ public class SiteElement {
 
   public void createObject(String type,int loc_x,int loc_y,String color) {
     if(type.equalsIgnoreCase("tree")) {
-      ElementTree.cloneMe();
+      buildSpace[loc_x][loc_y] = 1; //mark this location as used
+      ElementTree.cloneMe(loc_x,loc_y,color);
     }
     else if(type.equalsIgnoreCase("bench")) {
-      ElementBench.cloneMe();
+      buildSpace[loc_x][loc_y] = 1; //mark this location as used
+      ElementBench.cloneMe(loc_x,loc_y,color);
     }
     else if(type.equalsIgnoreCase("road")) {
-      ElementRoad.cloneMe();
+      buildSpace[loc_x][loc_y] = 1; //mark this location as used
+      ElementRoad.cloneMe(loc_x,loc_y,color);
     }
     else if(type.equalsIgnoreCase("house")) {
-      ElementHouse.cloneMe();
+      buildSpace[loc_x][loc_y] = 1; //mark this location as used
+      ElementHouse.cloneMe(loc_x,loc_y,color);
     }
     else if(type.equalsIgnoreCase("building")) {
-      ElementBuilding.cloneMe();
+      buildSpace[loc_x][loc_y] = 1; //mark this location as used
+      ElementBuilding.cloneMe(loc_x,loc_y,color);
     }
     else if(type.equalsIgnoreCase("sidewalk")) {
-      ElementSidewalk.cloneMe();
+      buildSpace[loc_x][loc_y] = 1; //mark this location as used
+      ElementSidewalk.cloneMe(loc_x,loc_y,color);
     }
     else {
       System.out.println("Invalid object specified");
