@@ -21,6 +21,8 @@ public class SiteDeveloper {
     */
     Scanner sc = new Scanner(System.in);
 
+    SiteElement se = new SiteElement();
+
     /**
      *  call to displayMenu, then enter into while loop to accept
      *  user input. Infinte loop, till the user types 'q'
@@ -91,27 +93,7 @@ public class SiteDeveloper {
                           /**
                             * now that we have a valid command, with all required parameters, lets create it
                            */
-
-                          if(create.equalsIgnoreCase("tree")) {
-                            SiteElement.createObject(create,loc_x,loc_y,color);
-                          }
-                          else if(create.equalsIgnoreCase("building")) {
-                            //SiteElement.getBuilding();
-                          }
-                          else if(create.equalsIgnoreCase("bench")) {
-                            //SiteElement.getBench();
-                          }
-                          else if(create.equalsIgnoreCase("house")) {
-                            //SiteElement.getHouse();
-                          }
-                          else if(create.equalsIgnoreCase("road")) {
-                            //SiteElement.getRoad();
-                          }
-                          else {
-                            System.out.println("Error, invalid object specified");
-                          }
-            
-
+                          se.createObject(create,loc_x,loc_y,color);
                         }
                         
                       }
