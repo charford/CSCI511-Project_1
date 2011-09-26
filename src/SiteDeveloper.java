@@ -136,6 +136,8 @@ public class SiteDeveloper {
   private static void displayMenu() {
     System.out.println("Enter a command to continue.\n");
     System.out.println("Example: create tree loc 3 4  color green\n");
+    System.out.println("Available objects: Tree, Building, Bench, Sidewalk, House, and Road\n");
+    System.out.println("Available colors: \n");
     System.out.println("To quit, press q.");
   }
 };

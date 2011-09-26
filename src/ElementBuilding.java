@@ -8,5 +8,6 @@ class ElementBuilding extends SiteElement {
    */
   public static void cloneMe(int loc_x,int loc_y,String color) {
     System.out.println("ElementBuilding cloneMe()");   
+    System.out.println("ElementBuilding created building at location " + loc_x + ", " + loc_y + " , and painted it " + color); 
   }
 };
