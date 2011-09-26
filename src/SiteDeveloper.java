@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class SiteDeveloper {
   /**
+   *  @author Casey Harford
+   *  @version 1.0
    *  Main method
    *  Purpose: Reads user input, returns error if invalid format given
    *  If valid command, makes call to SiteElement method for corresponding 
