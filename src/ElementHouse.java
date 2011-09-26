@@ -6,7 +6,6 @@ class ElementHouse extends SiteElement {
    *  @param color    gets color to make house
   */
   public static void cloneMe(int loc_x,int loc_y,String color) {
-    System.out.println("ElementHouse cloneMe()");   
     System.out.println("ElementHouse created house at location " + loc_x + ", " + loc_y + " , and painted it " + color); 
   }
 };

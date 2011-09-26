@@ -1,5 +1,60 @@
-create tree loc 3 4 color green
-create sidewalk loc 4 3 color blue
-create bench loc 3 4 color red
-create bench loc 3 3 djfl
-q
+create road loc 5 1 color gray
+create road loc 5 2 color gray
+create road loc 5 3 color gray
+create road loc 5 4 color gray
+create road loc 5 5 color gray
+create road loc 5 6 color gray
+create road loc 5 7 color gray
+create road loc 5 8 color gray
+create road loc 5 9 color gray
+create road loc 4 1 color gray
+create road loc 4 2 color gray
+create road loc 4 3 color gray
+create road loc 4 4 color gray
+create road loc 4 5 color gray
+create road loc 4 6 color gray
+create road loc 4 7 color gray
+create road loc 4 8 color gray
+create road loc 4 9 color gray
+create road loc 6 8 color gray
+create road loc 6 9 color gray
+create road loc 7 8 color gray
+create road loc 7 9 color gray
+create road loc 8 8 color gray
+create road loc 8 9 color gray
+create road loc 9 8 color gray
+create road loc 9 9 color gray
+create road loc 10 8 color gray
+create road loc 10 9 color gray
+create road loc 11 8 color gray
+create road loc 11 9 color gray
+create road loc 12 8 color gray
+create road loc 12 9 color gray
+create road loc 13 8 color gray
+create road loc 13 9 color gray
+create road loc 14 8 color gray
+create road loc 14 9 color gray
+create road loc 15 8 color gray
+create road loc 15 9 color gray
+
+create tree loc 7 1 color green
+create tree loc 7 2 color green
+create tree loc 8 2 color green
+create tree loc 10 10 color green
+create tree loc 12 10 color green
+create tree loc 14 10 color green
+create tree loc 16 10 color green
+create tree loc 9 7 color green
+create tree loc 11 7 color green
+create tree loc 13 7 color green
+
+create bench loc 3 5 color brown
+create bench loc 3 6 color brown
+create bench loc 6 3 color brown
+create bench loc 6 2 color brown
+
+create building loc 7 3 color red
+create building loc 9 11 color red
+p
+create tree loc 50 4 color blue
+create tree loc 4 50 color blue

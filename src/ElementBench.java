@@ -7,7 +7,6 @@ class ElementBench extends SiteElement {
     * @param color  get color to draw bench
    */
   public static void cloneMe(int loc_x,int loc_y,String color) {
-    System.out.println("ElementBench cloneMe()");   
     System.out.println("ElementBench created bench at location " + loc_x + ", " + loc_y + " , and painted it " + color); 
   }
 };

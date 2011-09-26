@@ -7,8 +7,6 @@ class ElementTree extends SiteElement {
     * @param color  get color to draw tree
    */
   public static void cloneMe(int loc_x, int loc_y, String color) {
-    buildSpace[loc_x][loc_y] = 1;
-    System.out.println("ElementTree cloneMe()"); 
     System.out.println("ElementTree created tree at location " + loc_x + ", " + loc_y + " , and painted it " + color); 
   }
 };

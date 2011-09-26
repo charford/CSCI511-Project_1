@@ -130,6 +130,12 @@ public class SiteDeveloper {
         System.out.println("Quiting SiteDeveloper. Have a nice day!");
         break;
       }
+      /**
+       *
+      */
+      if(user_input.equalsIgnoreCase("p")) {
+        se.outputBuildSpace();
+      }
     }
   }
 
