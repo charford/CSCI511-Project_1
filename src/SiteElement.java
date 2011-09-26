@@ -37,7 +37,7 @@ public class SiteElement {
       buildSizes[0] = 0;
       buildSizes[1] = 1;
       buildSizes[2] = 1;
-      buildSizes[3] = 1;
+      buildSizes[3] = 2;
       buildSizes[4] = 2;
       buildSizes[5] = 4;
       buildSizes[6] = 1;
