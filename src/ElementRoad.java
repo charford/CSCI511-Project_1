@@ -1,5 +1,8 @@
+/**
+ *  class for road elements
+ *  will be used to draw the object, in version2
+*/
 class ElementRoad extends SiteElement {
-
    /**
     * method for cloneMe
     * @param loc_x  get x coordinate to place the road

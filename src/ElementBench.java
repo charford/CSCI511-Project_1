@@ -1,3 +1,7 @@
+/**
+ *  class for bench elements
+ *  will be used to draw the object, in version2
+*/
 class ElementBench extends SiteElement {
 
    /**

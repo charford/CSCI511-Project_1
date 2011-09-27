@@ -1,3 +1,7 @@
+/**
+ *  class for building elements
+ *  will be used to draw the object, in version2
+*/
 class ElementBuilding extends SiteElement {
 
    /**

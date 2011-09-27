@@ -1,3 +1,7 @@
+/**
+ *  class for house elements
+ *  will be used to draw the object, in version2
+*/
 class ElementHouse extends SiteElement {
   /**
    *  method for cloneMe

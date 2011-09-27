@@ -1,22 +1,31 @@
 import java.util.Scanner;
-
+/**
+ *  @author Casey Harford
+ *  @version 1.0
+ *  Main method
+ *  Purpose: Reads user input, returns error if invalid format given
+ *  If valid command, makes call to SiteElement method for corresponding 
+ *  object that it needs to create.
+*/
 public class SiteDeveloper {
-  /**
-   *  @author Casey Harford
-   *  @version 1.0
-   *  Main method
-   *  Purpose: Reads user input, returns error if invalid format given
-   *  If valid command, makes call to SiteElement method for corresponding 
-   *  object that it needs to create.
-  */
-  public static void main( String [] args ) {
-
+  public static void main ( String [] args ) {
     /**
      *  Print title and welcome message
     */
     System.out.println("-------------------------------------");
     System.out.println("Site Developer Application - Welcome!");
     System.out.println("-------------------------------------");
+
+    getInput();
+    
+  }
+
+  /**
+   *  method for getInput
+   *  used to get user input, performs loop till q command is pressed
+  */
+  private static void getInput() {
+
 
     /**
      *  Instantiate a Scanner object, we'll use this to read input
@@ -138,7 +147,10 @@ public class SiteDeveloper {
       }
     }
   }
-
+  
+  /**
+   *  method for displayMenu. This method can be called to display a menu for the user to choose from(commands)
+  */
   private static void displayMenu() {
     System.out.println("Enter a command to continue.\n");
     System.out.println("Example: create tree loc 3 4  color green\n");
