@@ -56,7 +56,6 @@ public class SiteDeveloper {
        *  retrieve input, store it in user_input
       */
       user_input = sc.next();
-      /** System.out.println("Your command: " + user_input);*/
 
       /**
        *  Check if user_input is valid
@@ -66,14 +65,12 @@ public class SiteDeveloper {
          /**
           *  create command
          */
-         /** System.out.println("Create command"); */
          if(sc.hasNext()) {
 
            /**
             *  what are we creating?
            */
            create = sc.next();
-           /**System.out.println("Create " + create);*/
            if(sc.hasNext()) {
 
              /**

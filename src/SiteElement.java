@@ -137,7 +137,7 @@ public class SiteElement {
     int size = buildSizes[type];
     boolean spaceAvailable = true;
     if( ( (loc_x+size)>size_x ) | ( (loc_y+size)>size_y ) ) {
-      System.out.println("Error, outside of buildSpace");
+      System.out.println("Error, outside of buildSpace " + loc_x + ", " + loc_y);
       return false;
     }
 
