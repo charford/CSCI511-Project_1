@@ -7,7 +7,20 @@ class ParseException extends Exception {
   /**
    *  constructor for ParseException
   */
-  ParseException() {
-    //constructor goes here
+  String err;
+  public ParseException() {
+   //default constructor goes here, initializes mistake to unknown
+   super();
+   err = "undefined";
+  }
+
+  public ParseException(String parseError) {
+    super(parseError);
+    err = parseError;
+  }
+
+  public String getException() {
+    System.out.println("getException");
+    return err;
   }
 };
